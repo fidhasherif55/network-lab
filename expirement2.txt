@@ -1,0 +1,161 @@
+mca@MCA05:~/Desktop/linux$ man cp
+mca@MCA05:~/Desktop/linux$ pwd
+/home/mca/Desktop/linux
+mca@MCA05:~/Desktop/linux$ ls
+candy  file1.txt  file2.txt  ilahia  linux
+mca@MCA05:~/Desktop/linux$  echo fidha
+fidha
+mca@MCA05:~/Desktop/linux$ read a b
+3 4
+mca@MCA05:~/Desktop/linux$ read $a
+bash: read: `3': not a valid identifier
+mca@MCA05:~/Desktop/linux$ echo $a
+3
+mca@MCA05:~/Desktop/linux$ echo $b
+4
+mca@MCA05:~/Desktop/linux$ echo $a $b
+3 4
+mca@MCA05:~/Desktop/linux$ cat > colour
+yellow
+orange
+green
+red
+^C
+mca@MCA05:~/Desktop/linux$ cat > dress
+pakistani
+baggy
+shirt
+short kurtha^C
+mca@MCA05:~/Desktop/linux$ cat >college.txt
+teachers
+students
+departments
+classrooms^C
+mca@MCA05:~/Desktop/linux$ department.txt
+department.txt: command not found
+mca@MCA05:~/Desktop/linux$ cat > department.txt
+mca
+mba
+food technology
+agriculture^C
+mca@MCA05:~/Desktop/linux$ more college.txt
+teachers
+students
+departments
+mca@MCA05:~/Desktop/linux$ more department.txt
+mca
+mba
+food technology
+mca@MCA05:~/Desktop/linux$ less college.txt
+mca@MCA05:~/Desktop/linux$ less department.txt
+mca@MCA05:~/Desktop/linux$ less college.txt department.txt
+mca@MCA05:~/Desktop/linux$ less department.txt college.txt
+mca@MCA05:~/Desktop/linux$ mkdir jerry
+mca@MCA05:~/Desktop/linux$ cd jerry
+mca@MCA05:~/Desktop/linux/jerry$ mkdir tom
+mca@MCA05:~/Desktop/linux/jerry$ cd tom
+mca@MCA05:~/Desktop/linux/jerry/tom$ mkdir CN
+mca@MCA05:~/Desktop/linux/jerry/tom$ cd CN
+mca@MCA05:~/Desktop/linux/jerry/tom/CN$ mkdir friends
+mca@MCA05:~/Desktop/linux/jerry/tom/CN$ cd friends
+mca@MCA05:~/Desktop/linux/jerry/tom/CN/friends$ cd ..
+mca@MCA05:~/Desktop/linux/jerry/tom/CN$ cd ..
+mca@MCA05:~/Desktop/linux/jerry/tom$ cd -
+/home/mca/Desktop/linux/jerry/tom/CN
+mca@MCA05:~/Desktop/linux/jerry/tom/CN$ cd ..
+mca@MCA05:~/Desktop/linux/jerry/tom$ cd ..
+mca@MCA05:~/Desktop/linux/jerry$ cd ..
+mca@MCA05:~/Desktop/linux$ mkdir xxx yyy zzz
+mca@MCA05:~/Desktop/linux$ ls
+candy	     colour	     dress	file2.txt  jerry  xxx  zzz
+college.txt  department.txt  file1.txt	ilahia	   linux  yyy
+mca@MCA05:~/Desktop/linux$ cat > mariya.txt
+zhsaqszqwgszqwjwqjhszjzbazhbnaqjkaqnhzjaznaqzznjznzjnzakljzw843r438r9uio43rui34u8r34uirui43ru8i342iuyhe3ewhjjhdjhwedjwenjdjmnjedjkdjewdjej3ejkkjejkwekjkjwekjewjkewjkeeeeeeeeeeeeeeeeeeeeeeeeeeeeeuieuru34eru348r8u43892439u34ioipuhewpdkeldlkekdfekljkjekejjejkewhjhjrehwejhejklewjkopweow3oo43po94309^[OQ^[OR8905598i900i0ii90i90i9i09bhjjhbpl;kjthujijhhujedrvg i7mgyafh ,kdxghfsdyxsvghjhhwebjhrwefhrejrfhjerjekhjkrkjwekuwehjwerhugjwhkukhwekweujwerujerwjerjrgyergrhgewghrhgerhgrwehgregherghwgerygtwerrwguertuiortuhjijfgdgujit4iopoiprtuoi34rt3truu3tuh3rtuio34ryuierty34rtrujior3tuioiuojiujoertjiertgkteghujietg
+^C
+mca@MCA05:~/Desktop/linux$ head -c 3 mariya.txt
+zhsmca@MCA05:~/Desktop/linux$ tail -c 3 mariya.txt
+tg
+mca@MCA05:~/Desktop/linux$ wc -l mariya.txt
+1 mariya.txt
+mca@MCA05:~/Desktop/linux$ ssh
+usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface] [-b bind_address]
+           [-c cipher_spec] [-D [bind_address:]port] [-E log_file]
+           [-e escape_char] [-F configfile] [-I pkcs11] [-i identity_file]
+           [-J destination] [-L address] [-l login_name] [-m mac_spec]
+           [-O ctl_cmd] [-o option] [-P tag] [-p port] [-R address]
+           [-S ctl_path] [-W host:port] [-w local_tun[:remote_tun]]
+           destination [command [argument ...]]
+       ssh [-Q query_option]
+mca@MCA05:~/Desktop/linux$ expr 10 + 5
+15
+mca@MCA05:~/Desktop/linux$ df
+Filesystem     1K-blocks     Used Available Use% Mounted on
+tmpfs            1605128     2480   1602648   1% /run
+/dev/nvme0n1p6 183728536 41437576 132885264  24% /
+tmpfs            8025632        0   8025632   0% /dev/shm
+tmpfs               5120        8      5112   1% /run/lock
+efivarfs             256      127       125  51% /sys/firmware/efi/efivars
+/dev/nvme0n1p1     98304    33306     64998  34% /boot/efi
+tmpfs            1605124     2348   1602776   1% /run/user/1000
+mca@MCA05:~/Desktop/linux$ pf
+pf: command not found
+mca@MCA05:~/Desktop/linux$ ps
+    PID TTY          TIME CMD
+   3512 pts/0    00:00:00 bash
+   7017 pts/0    00:00:00 ps
+mca@MCA05:~/Desktop/linux$ top
+
+top - 12:09:48 up  1:11,  1 user,  load average: 0.21, 0.31, 0.31
+Tasks: 346 total,   1 running, 345 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.4 us,  0.1 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :  15675.1 total,   9159.2 free,   3553.2 used,   3605.3 buff/cache     
+MiB Swap:   4096.0 total,   4096.0 free,      0.0 used.  12121.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                          
+   1760 mca       20   0 4824800 308912 152028 S   3.7   1.9   1:34.45 gnome-shell                                                                      
+   1573 mca        9 -11  406964  19076  13916 S   2.0   0.1   0:55.76 wireplumber                                                                      
+   1538 mysql     20   0 2376240 395968  36356 S   1.0   2.5   0:37.80 mysqld                                                                           
+   3427 mca       20   0  559696  58284  44920 S   1.0   0.4   0:15.51 gnome-terminal-                                                                  
+   1574 mca        9 -11  120512  15844  10616 S   0.7   0.1   0:09.82 pipewire-pulse                                                                   
+   7018 mca       20   0   14536   5932   3692 R   0.7   0.0   0:00.03 top                                                                              
+    159 root       0 -20       0      0      0 I   0.3   0.0   0:03.36 kworker/u65:0-i915_flip                                                          
+   1158 avahi     20   0    8844   4764   4116 S   0.3   0.0   0:02.28 avahi-daemon                                                                     
+   1569 mca        9 -11  116356  15316   8780 S   0.3   0.1   0:18.69 pipewire                                                                         
+   3544 root      20   0       0      0      0 I   0.3   0.0   0:01.10 kworker/u64:0-events_unbound                                                     
+   4680 mca       20   0 3432440 829476 126584 S   0.3   5.2   1:14.28 Isolated Web Co                                                                  
+   6604 root      20   0       0      0      0 I   0.3   0.0   0:01.00 kworker/0:0-events                                                               
+      1 root      20   0   23728  14916   9460 S   0.0   0.1   0:01.65 systemd                                                                          
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd                                                                         
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release                                                           
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_gp                                                                 
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-sync_wq                                                                
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-kvfree_rcu_reclaim                                                     
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-slub_flushwq                                                           
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-netns                                                                  
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri                                                      
+     13 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-mm_percpu_wq                                                           
+     14 root      20   0       0      0      0 S   0.0   0.0   0:00.06 ksoftirqd/0                                                                      
+     15 root      20   0       0      0      0 I   0.0   0.0   0:06.24 rcu_preempt                                                                      
+     16 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_exp_par_gp_kthread_worker/0                                                  
+     17 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_exp_gp_kthread_worker                                                        
+     18 root      rt   0       0      0      0 S   0.0   0.0   0:00.03 migration/0                                                                      
+     19 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_inject/0                                                                    
+     20 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0                                                                          
+     21 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/2                                                                          
+mca@MCA05:~/Desktop/linux$ ssh-copy-id
+Usage: /usr/bin/ssh-copy-id [-h|-?|-f|-n|-s|-x] [-i [identity_file]] [-p port] [-F alternative ssh_config file] [-t target_path] [[-o <ssh -o options>] ...] [user@]hostname
+	-f: force mode -- copy keys without trying to check if they are already installed
+	-n: dry run    -- no keys are actually copied
+	-s: use sftp   -- use sftp instead of executing remote-commands. Can be useful if the remote only allows sftp
+	-x: debug      -- enables -x in this shell, for debugging
+	-h|-?: print this help
+mca@MCA05:~/Desktop/linux$ ^C
+mca@MCA05:~/Desktop/linux$ 
+mca@MCA05:~/Desktop/linux$ scp
+usage: scp [-346ABCOpqRrsTv] [-c cipher] [-D sftp_server_path] [-F ssh_config]
+           [-i identity_file] [-J destination] [-l limit] [-o ssh_option]
+           [-P port] [-S program] [-X sftp_option] source ... target
+mca@MCA05:~/Desktop/linux$ grep -i mariya.txt
+^C
+mca@MCA05:~/Desktop/linux$ chmod +rwx mariya.txt
+
